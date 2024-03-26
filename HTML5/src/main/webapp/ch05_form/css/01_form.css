@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+div#container {
+	border: solid 0px red;
+	width: 80%;
+	margin: 5% auto 0 auto;
+}
+
+div#container > form {
+	border: solid 0px blue;
+	width: 50%;
+ /* margin: 2% 0 0 1%; */
+}
+
+div#container > form > fieldset > legend {
+	font-size: 20pt;
+	background-color: black;
+	color: white;
+	padding: 0.5% 1%;
+	margin: 0 3%;
+}
+
+div#container > form > fieldset > ul {
+	border: solid 0px blue;
+	list-style-type: none;
+	padding: 0 0 0 2.7%;
+}
+
+div#container > form > fieldset > ul > li {
+	border: solid 0px red;
+	line-height: 40px;
+}
+
+div#container > form > fieldset > ul > li > label {
+	border: solid 0px blue;
+	display: inline-block;
+	width: 25%;
+	font-weight: bold;
+}
+
+div#container > form > fieldset > ul > li > input {
+	height: 20px;
+}
+
+div#container > form > fieldset > ul > li:last-child > input {
+	width: 70px;
+	height: 30px;
+	color: white;
+	font-size: 16pt;
+	border: none;
+	padding: 3px;
+	margin: 2% 3% 0 0;
+}
+
+div#container > form > fieldset > ul > li:last-child > input:nth-child(1) {
+	background-color: navy;
+}
+
+div#container > form > fieldset > ul > li:last-child > input:nth-child(2) {
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
