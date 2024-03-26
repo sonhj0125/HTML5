@@ -40,8 +40,10 @@ div#container > table > tbody > tr > td:nth-child(2) {
 }
 
 table > caption {
-	font-size: 13pt;
+	font-size: 16pt;
 	font-weight: bold;
+ /*	border: solid 1px red; */
+	padding: 1.3% 0;
 }
 
 
