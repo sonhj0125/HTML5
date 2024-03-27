@@ -1,1 +1,74 @@
 @charset "UTF-8";
+
+div#container {
+	border: solid 0px gray;
+	width: 40%;
+	margin: 5% auto;
+	
+}
+
+div#container > table {
+	border: solid 0px #fcd558;
+	width: 100%; /* 이때의 100% 는 모니터의 100% 가 아니라 위 내용의 40% 의 100% 만큼이다. */
+	/* table 태그는 width 를 설정하지 않으면 그 기본 width 크기는 내용물 만큼 잡힌다. */
+	
+	border-collapse: collapse;	/* 표의 경계를 허문다. 간격 지우기 */
+}
+
+div#container > table th,
+div#container > table td {
+	border: solid 1px #fcd558;
+}
+
+div#container > table th {
+	background-color: #ccc;
+	height: 40px;
+	font-size: 14pt;
+}
+
+div#container > table td {
+	height: 30px;
+}
+
+div#container > table > tbody > tr > td,
+div#container > table > tfoot > tr > td  {
+	text-align: right;
+	font-size: 13pt;
+}
+
+div#container > table > tbody > tr > td:first-child,
+div#container > table > tfoot > tr > td:first-child {
+	text-align: center;
+}
+
+colgroup#firstColgroup {
+	background-color: #ffffb3;
+	font-size: 16pt !important;
+	font-weight: bold !important;
+}
+
+colgroup#secondColgroup {
+	background-color: #ffcccc;	
+}
+
+table > caption {
+	font-size: 16pt;
+	font-weight: bold;
+ /*	border: solid 1px red; */
+	padding: 1.3% 0;
+}
+
+div#container > table > tfoot > tr > td:first-child {
+	text-align: center;
+}
+
+div#container > table > tfoot > tr > td {
+	background-color: #d9ffb3;
+	font-weight: bold;
+}
+
+
+
+
+
+

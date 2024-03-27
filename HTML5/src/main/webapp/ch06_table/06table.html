@@ -2,12 +2,63 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>   </title>
+<title>테이블 만들기6[colspan, rowspan, :first-child, :last-child, :nth-child(숫자), ~ , + ]</title>
 
-
+<link rel="stylesheet" href="css/06table.css">
 
 </head>
 <body>
+
+	<div id="container">
+		<table>
+			<caption align="bottom">&lt;테이블&gt;에 대한 설명문구1</caption>
+			
+				<tr>
+					<th rowspan = "5" width= "30%">봄 맞이 바겐세일</th>
+					<!-- rowspan 은 행병합인데 rowspan="5" 는 5개행을 하나로 병합한다.
+                    조심할 것은 밑에 <tr>태그가 바로 나와야 한다.  -->
+					<th width= "25%">제품이름과 설명</th>
+					<th width= "15%">개당 가격</th>
+					<th width= "15%">박스당 개수</th>
+					<th>총가격</th>
+				</tr>
+			
+				<tr>
+					<td>블라우스 - 붉<span>은</span>색 실크</td>
+					<td>20,000원</td>
+					<td>150</td>
+					<td>3,000,000원</td>
+				</tr>
+				
+				<tr class= "myclass">
+					<td>바지 - 검<span>은</span>색 원단</td>
+					<td>4,000원</td>
+					<td>300</td>
+					<td>1,200,000원</td>
+				</tr>
+				
+				<tr class= "myclass">
+					<td>새<span>우</span>깡</td>
+					<td>3,000원</td>
+					<td>500</td>
+					<td>1,500,000원</td>
+				</tr>
+				
+				<tr>
+					<td>감<span>자</span>깡</td>
+					<td>5,000원</td>
+					<td>200</td>
+					<td>1,000,000원</td>
+				</tr>
+			
+				<tr>
+					<td colspan= "3">총박스 개수 <span>및</span> 총금액</td>	
+					<td>1,150</td>
+					<td>6,700,000원</td>
+				</tr>
+			
+		</table>
+	</div>
 
 </body>
 </html>

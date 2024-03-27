@@ -1,1 +1,137 @@
 @charset "UTF-8";
+
+div#container {
+	border: solid 0px gray;
+	width: 40%;
+	margin: 5% auto;
+	
+}
+
+div#container > table {
+	border: solid 0px #fcd558;
+	width: 100%; /* 이때의 100% 는 모니터의 100% 가 아니라 위 내용의 40% 의 100% 만큼이다. */
+	/* table 태그는 width 를 설정하지 않으면 그 기본 width 크기는 내용물 만큼 잡힌다. */
+	
+	border-collapse: collapse;	/* 표의 경계를 허문다. 간격 지우기 */
+}
+
+div#container > table th,
+div#container > table td {
+	border: solid 1px #fcd558;
+}
+
+div#container > table th {
+	background-color: #ccc;
+	height: 40px;
+	font-size: 14pt;
+}
+
+div#container > table td {
+	height: 30px;
+}
+
+div#container > table > tbody > tr > td {
+	text-align: right;
+	font-size: 13pt;
+}
+
+div#container > table > tbody > tr > td:first-child {
+	text-align: center;
+}
+
+colgroup#firstColgroup {
+	background-color: #ffffb3;
+	font-size: 16pt !important;
+	font-weight: bold !important;
+}
+
+colgroup#secondColgroup {
+	background-color: #ffcccc;	
+}
+
+table > caption {
+	font-size: 16pt;
+	font-weight: bold;
+ /*	border: solid 1px red; */
+	padding: 1.3% 0;
+}
+
+div#container > table > tbody > tr > td:first-child {
+	text-align: center;
+}
+
+div#container > table > tbody > tr:last-child > td {
+	background-color: #d9ffb3;
+	font-weight: bold;
+}
+
+div#container > table > tbody > tr:first-child > th:first-child ~ th {
+	background-color: #ffffb3;
+}
+
+/*
+	div#container > table > tbody > tr:first-child > th:first-child 의 엘리먼트(태그)에서
+	지금은 <th>봄 맞이 바겐세일</th> 을 말하는 것이다.
+	~ 은 해당 엘리먼트 다음에 나오는 모든 형제 태그(엘리먼트, 노드)를 가리키는 것이다.
+	즉, 지금은 <th width= "25%">제품이름과 설명</th> 와 <th width= "15%">개당 가격</th>, <th width= "15%">박스당 개수</th>, <th>총가격</th> 을 가리키는 것이다.
+	그 형제태그 중(span, div..) th 태그만을 가리키는 것이 ~ th 이다.
+*/
+
+div#container > table > tbody > tr:first-child > th:nth-child(2) ~ th {
+	color: red;
+}
+
+/*
+	div#container > table > tbody > tr:first-child > th:nth-child(2) 의 엘리먼트(태그)에서
+	지금은 <th>제품이름과 설명</th> 을 말하는 것이다.
+	* 은 해당 엘리먼트 다음에 나오는 모든 형제 태그(엘리먼트, 노드)를 가리키는 것이다.
+	즉, <th width= "15%">개당 가격</th>, <th width= "15%">박스당 개수</th>, <th>총가격</th> 을 가리키는 것이다.
+	그 형제태그 중 th 태그만을 가리키는 것이다.
+*/
+
+div#container > table > tbody > tr:first-child > th:first-child ~ th:hover {
+	/* 엘리먼트(태그):hover 은 엘리먼트(태그)에 마우스가 올라가면.. 이라는 뜻이다.*/
+	
+	font-size: 16pt;
+	background-color: navy;
+	color: white;
+	cursor: pointer;
+}
+
+div#container > table > tbody > tr:first-child > th:nth-child(3) + th:hover {
+	/* 엘리먼트(태그) + 은 엘리먼트(태그) 다음에 나오는 형제태그 중 바로 밑동생 1개 태그를 가리키는 것이다. */
+	/* 엘리먼트(태그):hover 은 엘리먼트(태그)에 마우스가 올라가면 이라는 뜻이다.*/
+	
+	font-size: 16pt;
+	background-color: white;
+	color: navy;
+	cursor: wait;
+}
+
+
+div#container > table > tbody > tr.myclass > td:first-child ~ * {
+	background-color: #99bbff;
+}
+
+
+div#container > table > tbody > tr:nth-child(2) > td:first-child > span {
+	color: blue;
+	font-weight: bold;
+}
+
+div#container > table > tbody > tr:nth-child(2) ~ * > td:first-child > span {
+	color: red;
+	font-weight: bold;
+}
+
+div#container > table > tbody > tr:last-child > td:first-child > span {
+	color: green;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
