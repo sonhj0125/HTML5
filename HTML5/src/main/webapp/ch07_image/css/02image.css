@@ -12,18 +12,28 @@ div#container > h1 {
 	padding-bottom: 3%;
 }
 
-div#container > div#first_div{
-	border: solid 1px gray;
+div#container > div#first_div, 
+div#container > div#second_div {
+	border: solid 0px gray;
 	width: 36%;
 }
 
+div#container div.title {
+	border: solid 0px red;
+	text-align: center;
+	font-size: 16pt;
+	margin-bottom: 30px;
+}
+
+
+
 div#container > div#first_div > div:first-child {
-	border: solid 1px green;
+	border: solid 0px green;
 	float: left;
 }
 
 div#container > div#first_div > div:nth-child(2) {
-	border: solid 1px green;
+	border: solid 0px green;
 	float: right;
 }
 
@@ -32,25 +42,66 @@ div#container > div#first_div > div:last-child {
 }
 
 
-div#container div.title {
-	border: solid 1px red;
-	text-align: center;
+
+
+div#container > div#second_div > div:first-child {
+	float: left;
+}
+
+div#container > div#second_div > div:last-child {
+	float: right;
 }
 
 
 
+div#container > div#third_div {
+	clear: both;
+}
+
+div#container > div#third_div > div {
+	border: solid 0px purple;
+	text-align: center;
+}
+
+
+/* 
+<내가 한 풀이>
+div#container > div#fourth_div > div:first-child {
+	float: left;
+	margin-right: 23.5%; 
+}
+
+div#container > div#fourth_div > div:nth-child(2) {
+	text-align: center;
+	display: inline-block;
+	margin-right: 23%; 
+}
+
+div#container > div#fourth_div > div:last-child {
+	display: inline-block;
+}
+
+또는 */
 
 
 
+div#container > div#fourth_div > div:first-child {
+   	float: left;
+   	width: 30%;
+} 
 
 
+div#container > div#fourth_div > div:nth-child(2) {
+   	float: left;
+   	width: 40%;
+   	text-align: center;
+} 
 
-
-
-
-
-
-
+div#container > div#fourth_div > div:last-child {
+   	float: right;
+   	width: 30%;
+   	text-align: right;
+}
 
 
 
