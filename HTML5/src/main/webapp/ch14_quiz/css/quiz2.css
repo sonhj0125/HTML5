@@ -1,1 +1,149 @@
 @charset "UTF-8";
+
+* { /* 모든 태그에는 */
+	font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+/* 여백 설정 */
+body {
+	border: solid 0px red;
+	word-break: break-all; 	/* 공백없이 영어로만 되어질 경우 해당 구역을 빠져나가므로 이것을 막기 위해서 사용한다. */ 
+	margin: 0; 				/* 바깥여백을 없는 것으로 하겠다. */
+	padding: 0; 			/* 안쪽여백을 없는 것으로 하겠다. */
+
+}
+
+body > div#wrap {
+	border: solid 0px blue;
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+
+
+body > div#wrap > header {
+	display: flex;
+}
+
+body > div#wrap > header > div:first-child {
+	border: solid 0px red;
+	width: 25%;
+}
+
+body > div#wrap > header > div:first-child > ul {
+	padding: 0;
+}
+
+body > div#wrap > header > div:first-child > ul > li {
+	list-style-type: none;
+	padding: 5% 0 0 0;
+}
+
+body > div#wrap > header > div:first-child > ul > li > label{
+	border: solid 0px blue;
+	display: inline-block;
+	width: 20%;
+	
+}
+
+body > div#wrap > header > div:first-child > ul > li:last-child{
+	border: solid 0px blue;
+	width: 50%;
+	padding: 5% 0 0 21%;
+}
+
+body > div#wrap > header > div:first-child > ul > li > input.userid,
+body > div#wrap > header > div:first-child > ul > li > input.passwd {
+	height: 20pt;
+}
+
+
+
+body > div#wrap > header > div:first-child > ul > li:last-child > input.login {
+	margin: 0 5% 0 0;
+}
+
+
+body > div#wrap > header > div:last-child {
+	border: solid 0px blue;
+	padding: 0;
+	margin: 0 auto 0 0;
+}
+
+
+
+body > div#wrap > section {
+	display: flex;
+}
+
+body > div#wrap > section > section#sidebar {
+	border: solid 0px purple;
+	background-color: #a6a6a6;
+	color: white;
+	margin: 0 auto 0 0;
+	width: 25%;
+	height: 500px;
+}
+
+body > div#wrap > section > section#sidebar > nav {
+	margin: 0 0 0 10%;
+	font-size: 14pt;
+}
+
+body > div#wrap > section > section#main {
+	border: solid 0px orange;
+	background-color: #333333;
+	color: #e6e6e6;
+	margin: 0 0 0 auto;
+	width: 70%;
+	max-height: 500px;
+	overflow: auto; 
+}
+
+
+body > div#wrap > section > section#main > article > p {
+	border: solid 0px red;
+	margin: 2% 2% 2% 2%;
+	width: 80%;
+}
+
+
+
+body > div#wrap > footer#page_footer {
+	background-color: #cccccc;
+	
+}
+
+body > div#wrap > footer#page_footer > p {
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
