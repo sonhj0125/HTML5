@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+/* 기본적인 폰트 설정하기 */
+
+* { /* 모든 태그에는 */
+	font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+/* 여백 설정 */
+body {
+	border: solid 0px red;
+	word-break: break-all; 	/* 공백없이 영어로만 되어질 경우 해당 구역을 빠져나가므로 이것을 막기 위해서 사용한다. */ 
+	margin: 0; 				/* 바깥여백을 없는 것으로 하겠다. */
+	padding: 0; 			/* 안쪽여백을 없는 것으로 하겠다. */
+
+}
+
+body > div#wrap {
+	border: solid 0px blue;
+	width: 70%;
+	margin: 0 auto;
+}
+ 
+ 
+ 
+body > div#wrap > header#page_header > nav > div {
+	border: solid 0px purple;
+	display: flex;
+}
+
+div#wrap > header#page_header > nav > div > div#first_div {
+	border: solid 0px gray;
+	width: 60%;
+}
+
+div#wrap > header#page_header > nav > div > div#second_div {
+	margin: 0 0 0 auto;
+}
+
+div#wrap > header#page_header > nav > div > div#first_div > ul {
+	border: solid 0px red;
+	padding: 0;
+	width: 100%;
+}
+
+div#wrap > header#page_header > nav > div > div#first_div > ul > li{
+	border: solid 0px gray;
+	display: inline-block;
+	margin: 0 10% 0 0;
+	
+}
+
+div#wrap > header#page_header > nav > div > div#first_div > ul > li,
+div#wrap > header#page_header > nav > div > div#second_div > ul > li {
+	border: solid 0px orange;
+	list-style-type: none;
+	font-size: 14pt;
+	color: blue;
+}
+
+body > div#wrap > section#sidebar > nav {
+	border: solid 0px red;
+	width: 60%;
+	padding: 0 0 10% 15%;
+}
+
+
+
+
+body > div#wrap > section#sidebar > nav > ul {
+	list-style-type: none; /* 기호를 안보이게 함 */
+	border: solid 0px pink;
+	padding: 0;
+	font-size: 14pt;
+	color: blue;
+}
+
+
+body > div#wrap > section#sidebar > nav > ul > li {
+	line-height: 250%;	/* 줄간격 */
+}
+
+
+
+body > div#wrap > section#sidebar > nav > ul > li:nth-child(5) > ul > li {
+	border: solid 0px red;
+	line-height: 150%;
+}
+
+body > div#wrap > footer#page_footer > nav > ul > li {
+	
+	border: solid 2px gray;
+	width: 15%;
+	color: blue;
+	padding: 0;
+	
+}
+
+
+body > div#wrap > footer#page_footer > nav > ul {
+	list-style-type: none; /* 기호를 안보이게 함 */
+	border: solid 0px pink;
+	padding: 0;
+	font-size: 14pt;
+}
+
+
+
+
+body > div#wrap > footer#page_footer > nav > ul > li {
+	display: inline-block;
+	border: solid 0px gray;
+	width: 12%;
+	margin: 0 2% 0 0;
+	
+
+}
+
+/* a 태그의 밑줄 제거하기 */
+a {
+	text-decoration: none;
+}
+
+/* a 태그에 마우스 포인터를 올려 놓았을 때 */
+body > div#wrap > header#page_header > nav > ul > li > a:hover {
+	background-color: gray;
+	color: white;
+	font-weight: bolder;
+	
+}
+
+
+div#wrap > header#page_header > nav > div > div#second_div > ul > li > input.myinput {
+	height: 23px;
+}
+
+div#wrap > header#page_header > nav > div > div#second_div > ul > li > input.search {
+	height: 30px;
+
+}
+
+div#wrap > hr {
+	border: solid 2px blue;
+	margin : 2% 0;
+}
+
+
+body > div#wrap > section {
+	display: flex;
+}
+
+
+
+body > div#wrap > section#posts > article {
+	border: solid 1px gray;
+	border-radius: 10px;
+	max-height: 550px;
+	overflow: auto; 
+	margin: 0 auto 0 0;
+}
+
+
+
+body > div#wrap > section#sidebar > nav {
+	border: solid 1px gray;
+	border-radius: 20px;
+	max-height: 510px;
+	margin: 0 0 0 auto;
+}
+
+
+
+body > div#wrap > section#posts aside { 
+	border: solid 0px gray;
+	
+	float: right;	
+	width: 35%;
+	
+	font-size: 16pt;
+	font-weight: bolder;
+	color: #b30059;
+	line-height: 180%;		
+ 	margin-left: 3%;
+ 	margin-top: -2.5%;
+ 
+}
+
+body > div#wrap > section#posts > article > P {
+	border: solid 0px green;
+	margin: 0 0 3% 0;
+	
+}
+
+
+
+body > div#wrap > section#posts {
+	border: solid 0px orange;
+	float: left;
+	width: 72%;
+}
+
+
+
+body > div#wrap > footer#page_footer {
+	border: solid 0px gray;
+	clear: both;	
+ 	text-align: center;
+	margin-bottom: 5%;
+	padding: 1.5%;
+}
+
+
+
+body > div#wrap > footer#page_footer > p {
+	font-size: 14pt;
+}
+
+
+
+
+
+
+
+
